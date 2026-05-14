@@ -1,0 +1,27 @@
+{
+  "common": [
+    { "name": "Books list", "data_type": "string", "default_value": "" },
+    { "name": "Environment", "data_type": "enum", "default_value": "UAT", "values": ["UAT", "PDN", "DEV"] },
+    { "name": "Currency", "data_type": "enum", "default_value": "USD", "values": ["USD", "EUR"] }
+  ],
+  "runs": [
+    {
+      "run_title": "Pre-run parameters",
+      "parameters": [
+        { "name": "Label", "data_type": "string", "default_value": "" },
+        { "name": "Filter", "data_type": "string", "default_value": "" },
+        { "name": "Valuation date", "data_type": "date", "default_value": "{today}" },
+        { "name": "Is Official", "data_type": "bool", "default_value": false }
+      ]
+    },
+    {
+      "run_title": "Post-run parameters",
+      "parameters": [
+        { "name": "Label", "data_type": "string", "default_value": "" },
+        { "name": "Filter", "data_type": "string", "default_value": "" },
+        { "name": "Valuation date", "data_type": "date", "default_value": "{today}" },
+        { "name": "Is Official", "data_type": "bool", "default_value": false }
+      ]
+    }
+  ]
+}
